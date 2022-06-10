@@ -1,8 +1,6 @@
 .row {
   max-width: $grid-width;
-  background-color: #eee;
   margin: 0 auto;
-
   //seleciona todos menos o last child
   &:not(:last-child) {
     margin-bottom: $gap-vertical;
