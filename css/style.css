@@ -716,7 +716,8 @@ body {
   width: 100%;
   transform: translate(-50%, -50%);
   list-style: none;
-  text-align: center; }
+  text-align: center;
+  overflow: hidden; }
 
 .navigation__item {
   margin: 1rem; }
