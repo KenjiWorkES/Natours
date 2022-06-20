@@ -11,9 +11,15 @@
   background-size: cover;
   background-position: top;
   /*serve para cortar a imagem ou div*/
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   /*clip-path: polygon(0 0, 100% 50%, 0 100%);*/
   /*CLIP MAKER PARA FAZER*/
+
+  @include respond(phone) {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+  }
 
   &__logo-box {
     position: absolute;
